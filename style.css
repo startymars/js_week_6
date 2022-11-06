@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+    
+}
+
+img{
+	display: block;
+	max-width:100%;
+}
+
+.sec-font {
+	font-family: 'Roboto', sans-serif;
+}
+
+.primaryColor{
+	color: #00807E;
+}
+
+
+.addTicket{
+	width: 80%;
+	
+	margin: 0 auto;
+	margin-top: 120px;
+	margin-bottom: 100px;
+	padding: 60px 95px;
+	box-shadow:0px 3px 6px #00000029;
+	
+}
+
+@media(max-width:992px){
+	.addTicket{
+		
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+	}
+
+	.img-word{
+		display: none;
+	}
+
+}
+
+.ticketBox-image{
+	max-width:350px;
+	height: auto;
+}
+
+@media(max-width:992px){
+	.ticketBox-image{
+
+		max-width:500px;
+
+	}
+}
+
+
+.borderLine{
+	width: 85%;
+	height: 3px;
+	background-color: #00807E;
+	
+}
+
+.form-group{
+	margin: 16px 0px;
+}
+
+.fs-16{
+	font-size: 16px;
+}
+
+.fs-32{
+	font-size: 32px;
+}
+
+.ticketName,.imageUrl,.ticketLocation,.ticketPrice,.ticketNum,.ticketLevel,.ticketDescription,.filiterLocation{
+	width: 70%;
+	font-size: 16px;
+	background-color: #FAFAFA;
+	border: none;
+	border-bottom: 1px solid #00807E;
+	color:#818A91;
+	min-height: 38px;
+	text-indent: 12px;
+}
+
+@media(max-width:767px){
+	.ticketName,.imageUrl,.ticketLocation,.ticketPrice,.ticketNum,.ticketLevel,.ticketDescription{
+
+		width: 100%;
+
+	}
+
+}
+
+.addButton{
+	background-color: #00807E;
+	color: white;
+	padding: 10px 40px;
+	border-radius: 5px;
+	border: none;
+	
+}
+
+/* 搜尋下半區域 */
+.searchContent{
+	background-color: #F7F7F7;
+
+}
+
+.searchTitle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;	
+}
+
+@media(max-width:767px){
+
+	.searchTitle{
+		flex-direction: column;
+		justify-content: space-between;
+		
+	}
+
+}
+
+.filter{
+	width: 200px;
+}
+
+.searchText{
+	text-indent: 10px;
+	
+}
+@media(max-width:767px){
+	.searchText{
+		margin-top: 20px;
+	}
+}
+
+.searchButton{
+	background-color: #00807E;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px 10px;
+	margin-left: 10px;
+
+}
+
+
+
+/* 列表下半區域 */
+.ticketArea{
+	margin-top:30px;
+}
+
+.ticketCard{
+	box-shadow: 0px 3px 6px #00000029;
+	width: 32%;
+	height: auto;
+	margin: 0px 5px;
+	
+	
+}
+
+@media(max-width:992px){
+	.ticketCard{
+		width: 45%;
+		margin: 10px 5px;
+	}
+}
+
+@media(max-width:767px){
+	.ticketCard{
+		width: 90%;
+		margin: 10px 5px;
+	}
+}
+
+.cardIntroduce{
+	padding: 10px 0px;
+	color: #818A91;
+	font-size: 16px;
+}
+
+
+
+
+
+.cardImg{
+	position: relative;
+}
+
+.cityTag{
+	position: absolute;
+	background-color: #64C3BF;
+	border-radius: 0 5px 5px 0px;
+	color: #fff;
+	padding: 8px 20px;
+	top:-20px;
+
+
+}
+
+.cityRank{
+	position: absolute;
+	background-color: #00807E;
+	border-radius: 0 5px 5px 0px;
+	padding: 5px 8px;
+	bottom: -20px;
+	color: #fff;
+}
+
+.cardConetnt{
+	padding: 40px 20px;
+}
+
+.cardInfo{
+	display: flex;
+	justify-content: space-between;
+	
+	
+}
+
+
+.notFind{
+	
+	margin-top: 30px;
+}
+
+.notFind h2{
+	margin-bottom: 40px;
+}
+
+.notFind img{
+	margin: 0 auto;
+}
